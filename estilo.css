@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@font-face {
+    font-family: "Greater Theory";
+    src: url(./Fonts/GreaterTheory.otf);
+}
+body {
+    font-family: "Greater Theory", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0faff;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(30, 58, 95, 0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo h2 {
+    color: #ff6f3c;
+    font-size: 1.5rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #1e3a5f;
+    background-color: #ff6f3c;
+    border-radius: 5px;
+}
+
+.intro {
+    font-family: "Play", serif;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 42px;
+    background-color:#fff6ed;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+    color:  #1e3a5f;
+}
+
+.intro h1 {
+    font-size: 2.8rem;
+    color:#ff6f3c;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.intro button {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    background-color:  #1e3a5f;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-family: "Greater Theory", sans-serif;
+}
+
+.intro button:hover {
+    background-color: #ff6f3c;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.flex-container img {
+    border: 5px solid ;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 150px;
+    height: auto;
+    margin-left: auto;
+}
+
+.flex-container img:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    background-color: #1e3a5f;
+    color: #ffffff;
+    margin-top: 50px;
+    width: 100%;
+    font-family: "Play", sans-serif;
+}
+
+footer a {
+    color: #ff6f3c;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: "Greater Theory", sans-serif;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 10px 0;
+}
