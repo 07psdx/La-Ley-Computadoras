@@ -7,7 +7,8 @@ body {
     font-family: "Greater Theory", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0faff;
+    background: linear-gradient(20005deg, #21446d 35%, #ff6f3c 70%);
+    background-attachment:initial;
     color: #2c3e50;
     line-height: 1.6;
 }
@@ -59,7 +60,7 @@ header {
     max-width: 1000px;
     margin: 50px auto;
     padding: 42px;
-    background-color: #fff6ed;
+    background-color: rgba(255, 231, 208, 0.9);
     border-radius: 15px;
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
 }
@@ -173,4 +174,109 @@ footer p {
 
 .intro button:hover {
     background-color: #ff6f3c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 1024px) {
+    .intro {
+        padding: 30px;
+        margin: 40px 20px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .flex-container img {
+        margin: 0 auto;
+        max-width: 80%;
+    }
+
+    #servicios-detallados, 
+    #overflow-section {
+        padding: 15px;
+    }
+}
+
+/* Móvil Grande: 576px - 767px */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-link {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+
+    .intro h1 {
+        font-size: 2.2rem;
+    }
+
+    .intro p {
+        font-size: 1.1rem;
+    }
+
+    .services-list {
+        padding: 0 15px;
+    }
+
+    .overflow-container {
+        max-height: 250px;
+    }
+}
+@media (max-width: 575px) {
+    .intro {
+        padding: 25px 15px;
+        margin: 30px 10px;
+    }
+
+    .intro h1 {
+        font-size: 1.8rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .flex-container img {
+        max-width: 100%;
+        border-width: 3px;
+    }
+
+    .overflow-container p {
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    footer a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* Pantallas muy grandes: > 1920px */
+@media (min-width: 1921px) {
+    .intro {
+        max-width: 1400px;
+    }
+
+    .flex-container img {
+        max-width: 300px;
+    }
 }

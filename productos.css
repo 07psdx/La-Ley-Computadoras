@@ -1,141 +1,339 @@
+/* productos.css - VERSIÓN CON ESTILOS ORIGINALES RESTAURADOS */
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 @font-face {
     font-family: "Greater Theory";
     src: url(./Fonts/GreaterTheory.otf);
 }
-body {
-    font-family: "Greater Theory", sans-serif;
+
+/* RESET */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f0faff;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Greater Theory", sans-serif;
+    background: linear-gradient(20005deg, #21446d 35%, #ff6f3c 70%);
+    background-attachment:initial;
     color: #2c3e50;
     line-height: 1.6;
 }
+
+/* HEADER ORIGINAL RESTAURADO */
 header {
     display: flex;
-    min-height: 70px;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    min-height: 70px;
+    padding: 10px 5%;
     background-color: #1e3a5f;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
 }
+
 .logo {
     display: flex;
     align-items: center;
     text-decoration: none;
 }
+
 .logo img {
     height: 50px;
     margin-right: 10px;
 }
+
+/* TÍTULOS RESTAURADOS EXACTAMENTE COMO LOS TENÍAS */
 .logo h2 {
     color: #ff6f3c;
     font-size: 1.5rem;
     margin: 0;
-    text-transform: uppercase;
     letter-spacing: 2px;
+    font-family: "Greater Theory", sans-serif; /* Fuente original */
 }
-.nav {
+
+h1 {
+    color: #ff6f3c;
+    font-size: 2.8rem;
+    font-family: "Play", serif; /* Fuente original */
+    text-align: center;
+}
+
+h2 {
+    color: #1e3a5f;
+    font-size: 1.8rem;
+    font-family: "Greater Theory", sans-serif; /* Fuente original */
+}
+
+h3 {
+    color: #1e3a5f;
+    font-size: 1.8rem;
+    font-family: "Greater Theory", sans-serif; /* Fuente original */
+}
+
+h4 {
+    color: #1e3a5f;
+    font-size: 1.4rem;
+    font-family: "Greater Theory", sans-serif; /* Fuente original */
+}
+
+/* NAV ORIGINAL */
+nav {
     display: flex;
     gap: 15px;
 }
+
 .nav-link {
     color: #ffffff;
     font-weight: bold;
     text-decoration: none;
-    padding: 8px 12px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-family: "Greater Theory", sans-serif; /* Fuente original */
 }
+
 .nav-link:hover {
     color: #1e3a5f;
     background-color: #ff6f3c;
-    border-radius: 5px;
 }
+
+/* CONTENIDO PRINCIPAL ORIGINAL */
 .intro {
     font-family: "Play", serif;
-    font-weight: 400;
-    font-style: normal;
     max-width: 1000px;
     margin: 50px auto;
-    padding: 42px;
+    padding: 40px;
     background-color: #fff6ed;
     border-radius: 15px;
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
 }
-.intro h1 {
-    font-size: 2.8rem;
-    color: #ff6f3c;
-    margin-bottom: 20px;
-    text-align: center;
-}
+
 .intro p {
     font-size: 1.2rem;
     line-height: 1.8;
     text-align: justify;
     margin-bottom: 30px;
+    font-family: "Play", serif; /* Fuente original */
 }
-.intro button {
+
+/* PRODUCTOS ORIGINAL */
+.product-section {
+    margin-top: 40px;
+}
+
+.product-category {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.product-divider {
+    border: 1px solid #ff6f3c;
+    margin: 30px 0;
+    opacity: 0.5;
+}
+
+.product-container {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+    align-items: flex-start;
+}
+
+.image-container {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.product-title {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: rgba(255, 111, 60, 0.1);
+    border-radius: 8px 8px 0 0;
+    border-bottom: 2px solid #ff6f3c;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 250px;
+    border: 4px solid #ff6f3c;
+    border-radius: 0 0 12px 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: white;
+    padding: 5px;
+}
+
+.product-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-color: #ff8c5a;
+}
+
+.description-container {
+    flex: 2;
+    padding: 10px;
+}
+
+.product-description {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 15px;
+    background: #f0faff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Play", serif; /* Fuente original */
+}
+
+.btn {
     font-size: 1.1rem;
     padding: 12px 20px;
-    background-color:  #1e3a5f;
+    background-color: #1e3a5f;
     color: #ffffff;
     border: none;
     border-radius: 8px;
-    cursor: pointer;
     display: block;
-    margin: 0 auto;
-    font-family: "Greater Theory", sans-serif;
+    margin: 30px auto 0;
+    font-family: "Greater Theory", sans-serif; /* Fuente original */
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.intro button:hover {
+.btn:hover {
     background-color: #ff6f3c;
 }
 
-.flex-container {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin: 20px 0;
-    padding: 0 20px;
-}
-
-.flex-container img {
-    border: 5px solid ;
-    border-radius: 15px;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 150px;
-    height: auto;
-    margin-left: auto;
-}
-
-.flex-container img:hover {
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-}
-
+/* FOOTER ORIGINAL */
 footer {
-    text-decoration: none;
     text-align: center;
     padding: 20px;
     background-color: #1e3a5f;
     color: #ffffff;
     margin-top: 50px;
     width: 100%;
-    font-family: "Play", sans-serif;
-}
-
-footer a {
-    color: #ff6f3c;
-    text-decoration: none;
-    margin: 0 10px;
-    font-family: "Greater Theory", sans-serif;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
 
 footer p {
     margin: 10px 0;
+    font-family: "Play", sans-serif; /* Fuente original */
+}
+
+.social-links {
+    margin: 15px 0;
+}
+
+.social-link,
+.social.link {
+    color: #ff6f3c;
+    text-decoration: none;
+    margin: 0 10px;
+    font-family: "Greater Theory", sans-serif; /* Fuente original */
+}
+
+.social-link:hover,
+.social.link:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE ORIGINAL MEJORADO */
+@media (max-width: 1200px) {
+    header {
+        padding: 10px 3%;
+    }
+}
+
+@media (max-width: 992px) {
+    .product-container {
+        flex-direction: column;
+    }
+    
+    .image-container {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .product-image {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    nav {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .intro {
+        padding: 30px;
+        margin: 30px 20px;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    .intro p {
+        font-size: 1.1rem;
+    }
+    
+    h2, h3 {
+        font-size: 1.6rem;
+    }
+    
+    h4 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .intro p {
+        font-size: 1rem;
+    }
+    
+    .product-image {
+        max-width: 100%;
+    }
+    
+    .nav-link {
+        padding: 6px 10px;
+        font-size: 0.9rem;
+    }
+    
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+    
+    h4 {
+        font-size: 1.2rem;
+    }
+}
+
+/* CORRECCIÓN ESPECÍFICA PARA PANTALLAS GRANDES */
+@media (min-width: 1600px) {
+    header {
+        padding: 15px 10%;
+    }
+    
+    .intro {
+        max-width: 1200px;
+        padding: 50px;
+    }
 }
