@@ -22,12 +22,16 @@ header {
     padding: 10px 20px;
     background-color: #1e3a5f;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateX(0deg);
+    transition: transform 0.5s ease;
 }
 
 .logo {
     display: flex;
     align-items: center;
     text-decoration: none;
+    transform: translateZ(20px);
 }
 
 .logo img {
@@ -62,6 +66,8 @@ nav {
 
 .intro {
     font-family: "Play", serif;
+    transform: perspective(1000px) rotateX(1deg);
+    transform-origin: top center;
     font-weight: 400;
     font-style: normal;
     max-width: 1000px;
@@ -120,6 +126,8 @@ nav {
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: perspective(800px) rotateY(1deg);
+    transform-origin: center;
 }
 
 .form-row {
